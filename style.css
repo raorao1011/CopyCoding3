@@ -4,7 +4,8 @@
 }
 
 body {
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #24292e;
 }
 
 img {
@@ -20,18 +21,32 @@ a {
     text-decoration: none;
 }
 
+.site_icon a {
+    display: block;
+}
+
 .container {
     max-width: 960px;
     padding: 0 4%;
-    margin: 0 auto;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+}
+
+.sec_ttl {
+    text-align: center;
+    margin-bottom: 65px;
+    font-size: 1.5rem;
 }
 
 /* header */
-header .container {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 270px;
+    margin: 0 auto;
+    padding: 0 4%;
+    width: 960px;
 }
 
 .site_icon {
@@ -54,6 +69,8 @@ header li {
 
 header li a {
     color: #24292e;
+    font-size: 0.9rem;
+    vertical-align: top;
 }
 
 header li a:hover {
@@ -64,4 +81,114 @@ header li a:hover {
     width: 20px;
     display: inline-block;
     vertical-align: top;
+}
+
+/* main */
+/* main_visual */
+.main_visual {
+    margin-bottom: 80px;
+}
+
+.main_visual img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+/* about section */
+
+.about ul {
+    margin-bottom: 30px;
+}
+
+.about li:first-child {
+    margin-bottom: 30px;
+}
+
+/* works section */
+
+.works ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.works li {
+    width: 30%;
+    margin: 0 0 32px 0;
+}
+
+/* News section */
+
+.news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #c8c8c8;
+}
+
+.news dt {
+    width: 20%;
+    padding: 15px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.news dd {
+    padding: 15px;
+    width: 80%;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+/* contact section */
+.contact dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact dt {
+    width: 15%;
+}
+
+.contact dd {
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.contact input , 
+.container textarea{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #C8C8C8;
+}
+
+.contact textarea {
+    height: 160px;
+}
+
+#submit_btn {
+    text-align: center;
+}
+
+#submit_btn input {
+    background-color: #24292e;
+    padding: 15px 0;
+    border: 1px solid #24292e;
+    color: #ffffff;
+    width: 200px;
+}
+
+#submit_btn input:hover {
+    background-color: #ffffff;
+    color: #24292e;
+}
+
+/* footer */ 
+footer {
+    background-color: #24292e;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.6rem;
+}
+
+footer p {
+    padding: 10px 20px;
 }
